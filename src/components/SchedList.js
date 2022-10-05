@@ -98,6 +98,8 @@ class SchedList extends Component {
   addCourse = (course) => {
     const token = Cookies.get('XSRF-TOKEN');
  
+ 
+	console.log(course);
     fetch(`${SERVER_URL}/schedule`,
       { 
         method: 'POST', 
@@ -124,6 +126,9 @@ class SchedList extends Component {
         console.error(err);
     })
   } 
+  
+  
+  
 
   render() {
      const columns = [
