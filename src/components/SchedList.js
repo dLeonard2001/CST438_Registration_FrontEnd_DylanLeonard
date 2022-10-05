@@ -176,7 +176,7 @@ class SchedList extends Component {
             <div style={{ height: 400, width: '100%' }}>
               <DataGrid rows={this.state.courses} columns={columns} />
             </div>
-            <ToastContainer autoClose={1500} />   
+            // <ToastContainer autoClose={1500} />   
           </div>
       </div>
       ); 

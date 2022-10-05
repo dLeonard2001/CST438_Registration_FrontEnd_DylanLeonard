@@ -22,21 +22,21 @@ class addStudent extends Component {
       this.setState( {open:false} );
     };
 
-    handleChange = (event) => {
-      this.setState({course:{course_id: event.target.value}});
-    }
+    //handleChange = (event) => {
+     // this.setState({course:{course_id: event.target.value}});
+    //}
 
   // Save course and close modal form
-    handleAdd = () => {
-       this.props.addCourse(this.state.course);
-       this.handleClose();
-    }
+   // handleAdd = () => {
+      // this.props.addCourse(this.state.course);
+       //this.handleClose();
+    //}
 
     render()  { 
       return (
 	  
           <div>
-                  <Button component={Link} to={{pathname:'/'}}> Add a student </Button>
+                  <h2> Hello world </h2>
           </div>
       ); 
     }
