@@ -53,7 +53,6 @@ class AddStudent extends Component {
 		
 		student = {"name":student[0], "email":student[1]};
 		
-		
 		fetch(`${BACK_URL}/student`,
 			{
 				method:'POST',
@@ -77,7 +76,6 @@ class AddStudent extends Component {
 				});
 				console.error(err);
 			});
-				
 	}
 
     render()  { 
@@ -89,7 +87,8 @@ class AddStudent extends Component {
 			<TextField autoFocus fullWidth label="Student Email" name="email" 
 				onChange={this.handleChangeEmail}  />
 			<Button onClick={this.handleAdd} style={{paddingTop: 20}}
-				> Add a student </Button>				
+				> Add a student </Button>
+			<ToastContainer autoClose={1500} />
       </div>
       ); 
     }
